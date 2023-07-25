@@ -16,16 +16,16 @@ object Demo {
   }
 
   def decryption(text: String, shift: Int): String = {
-    val encryptedText = new StringBuilder()
+    val decryptedText= new StringBuilder()
 
     for (i <- 0 to text.length - 1) {
-      var encryptedChar = ' '
+      var decryptedChar = ' '
       if (text.charAt(i) != ' ') {
-        encryptedChar = (text.charAt(i) - shift).toChar
+        decryptedChar = (text.charAt(i) - shift).toChar
       }
-      encryptedText.append(encryptedChar)
+      decryptedText.append(decryptedChar)
     }
-    encryptedText.toString()
+    decryptedText.toString()
   }
 
 
